@@ -10,23 +10,23 @@ import {
 } from 'react-router-dom';
 
 export default class App extends Component {
-
+  pageSize = 5;
   render() {
     return (
       //<div style={{ backgroundColor: "gray" }}>
       <div>
         <Router>
           <Navbar />
-          {/* <News pageSize={5} country="in" category="sPOrts" /> */}
+          {/* <News pageSize={this.pageSize} country="in" category="sPOrts" /> */}
           <Switch>
-            <Route exact key="general" path="/"><News pageSize={5} country="in" category="general" /></Route>
-            <Route exact key="business" path="/business"><News pageSize={5} country="in" category="business" /></Route>
-            <Route exact key="entertainment" path="/entertainment"><News pageSize={5} country="in" category="entertainment" /></Route>
-            <Route exact key="general" path="/general"><News pageSize={5} country="in" category="general" /></Route>
-            <Route exact key="health" path="/health"><News pageSize={5} country="in" category="health" /></Route>
-            <Route exact key="science" path="/science"><News pageSize={5} country="in" category="science" /></Route>
-            <Route exact key="sports" path="/sports"><News pageSize={5} country="in" category="sports" /></Route>
-            <Route exact key="technology" path="/technology"><News pageSize={5} country="in" category="technology" /></Route>
+            <Route exact key="general" path="/"><News pageSize={this.pageSize} country="in" category="general" /></Route>
+            <Route exact key="business" path="/business"><News pageSize={this.pageSize} country="in" category="business" /></Route>
+            <Route exact key="entertainment" path="/entertainment"><News pageSize={this.pageSize} country="in" category="entertainment" /></Route>
+            <Route exact key="general" path="/general"><News pageSize={this.pageSize} country="in" category="general" /></Route>
+            <Route exact key="health" path="/health"><News pageSize={this.pageSize} country="in" category="health" /></Route>
+            <Route exact key="science" path="/science"><News pageSize={this.pageSize} country="in" category="science" /></Route>
+            <Route exact key="sports" path="/sports"><News pageSize={this.pageSize} country="in" category="sports" /></Route>
+            <Route exact key="technology" path="/technology"><News pageSize={this.pageSize} country="in" category="technology" /></Route>
           </Switch>
         </Router>
       </div>
