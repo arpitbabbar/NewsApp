@@ -1,0 +1,11 @@
+For changing Class based components to Functional based components
+1. make class a fubction
+2. remove render method
+3. export default {function name}
+4. use props in fubction parameter
+5. useState in place of constructor (diff state for diff var(page, loading, etc))
+6. make all function const in iys defn
+7. use useState while using setState
+8. replace all the code using this.xyz.abc to abc only
+9. useEffect in place of componentDidMount or componentDidUpdate etc
+10. write propTypes and default props in the end of code just before export default
