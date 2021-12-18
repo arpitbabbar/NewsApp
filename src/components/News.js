@@ -45,6 +45,9 @@ const News = (props) => {
         props.setProgress(70);
         setarticles(parsedData.articles);
         settotalResults(parsedData.totalResults);
+        console.log(parsedData);
+        console.log(articles);
+        console.log(totalResults);
         setloading(false);
         //  this.setState({ articles: parsedData.articles, totalResults: parsedData.totalResults, loading: false });
         props.setProgress(100);
@@ -144,8 +147,6 @@ const News = (props) => {
         // console.log(this.state.articles.length);
         // console.log(this.state.totalResults);
         // console.log(articles.length);
-        // console.log(totalResults);
-        // console.log(articles.length + props.pageSize);
         if ((articles.length + props.pageSize) === totalResults) {
             sethasMore(false);
             return;
